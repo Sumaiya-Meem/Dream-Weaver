@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div>
-            <div className="flex mx-4 mt-14 mb-4"> 
-                <div className="w-2/4" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+            <div className="flex flex-col md:flex-row gap-2 mx-4 mt-14 mb-4"> 
+                <div className="w-full md:w-2/4" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                     <img src={aboutImg} alt="" />
                 </div>
-                <div className="w-2/4" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                <div className="w-full md:w-2/4" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
                     <h1 className="text-3xl font-semibold mb-2"><span className="text-[#FF444A] text-3xl">A</span>bout <span className="text-[#FF444A] text-3xl">U</span>s</h1>
                     <p className="text-[#a1a0a0] mb-2"> From weddings that dance with romance to birthday parties filled with joy, and engagements that sparkle with love, our mission is to transform your special moments into unforgettable memories, meticulously planning and managing every detail to ensure your events are as unique and exceptional as you envisioned.</p>
                     <div className="space-y-3">
