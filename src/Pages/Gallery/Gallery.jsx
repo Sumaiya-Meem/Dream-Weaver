@@ -5,7 +5,7 @@ import gallery4 from"../../assets/gallery4.webp"
 import gallery5 from"../../assets/gallery5.webp"
 import gallery6 from"../../assets/gallery6.webp"
 import gallery7 from"../../assets/gallery7.webp"
-import './Gallery.css'
+
 const Gallery = () => {
     return (
         <div>

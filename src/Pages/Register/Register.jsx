@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,14 +31,16 @@ const Register = () => {
                 toast.success('Registration Successful', {
                     position: "top-center",
                 });
+                
             })
             .catch(error => {
                 console.log(error.message);
             })
-
-
+          
+            
     }
-
+    
+    
     return (
         <div>
             <div className="hero  bg-gradient-to-r from-[#8d318a] to-[#19c7c7]">

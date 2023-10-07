@@ -77,7 +77,7 @@ const Navbar = () => {
                             :
                             <>
                                 <Link to="/login"><button className="btn  btn-outline btn-info text-base ">Login</button></Link>
-
+                                <Link to="/register"><button className="btn  btn-outline btn-info text-base ml-3 ">Register</button></Link>
                             </>
                     }
                 </div>

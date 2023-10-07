@@ -1,5 +1,5 @@
 # Website Name
-## Social-Event-Management
+Social-Event-Management
 
 ## Website Live Link
 
