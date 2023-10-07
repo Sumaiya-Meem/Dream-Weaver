@@ -20,9 +20,7 @@ console.log(greetign);
 
 #### Answer:  A
 
-
-<i>Write your explanation here</i>
-In the code, `greeting` is declared but unassigned on the other hand `greetign` is assigned with an empty object but undecalred. if print `greetign` it show empty object `{}` to the console but there is change that it throw an error because `greetign` is undecalred.
+In this code, `greeting` is declared but unassigned on the other hand `greetign` is assigned with an empty object but undecalred. if print `greetign` it show empty object `{}` to the console but there is change that it throw an error because `greetign` is undecalred.
 </p>
 </details>
 
@@ -44,9 +42,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+In this code, the output of the `sum(1, "2")` function is `"12"` because The first argument is a number `(1)`, while the second argument is a string `("2")`.For this reason JavaScript will convert the number 1 to a string and then concatenate it with the string "2", resulting in the string `"12"`.
 
 </p>
 </details>
@@ -70,9 +68,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+In this code ,output is `['🍕', '🍫', '🥑', '🍔']`.Here `food` is an array containing four food emoji strings and `info` is object  with a property favoriteFood . As `favoriteFood` initially set food[0] that's mean `favoriteFood` = ["🍕"].But later `favoriteFood` update with the string `"🍝"` but it doesn't modify the original `food` array.So when print the `food` array , it will still contain the original elements.
 
 </p>
 </details>
@@ -95,7 +93,8 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
+in this code, `sayHi` function expects one argument `name`, to be passed when it's called.But in `console.log(sayHi())` , didn't provide any argument to the sayHi function.So JavaScript will assign undefined to the parameter.For this reason `name` parameter inside the `sayHi` function will be undefined &  the function will return the string `"Hi there, undefined"`.
 
 <i>Write your explanation here</i>
 
@@ -123,9 +122,8 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
-
-<i>Write your explanation here</i>
+#### Answer: 3
+To use ForEach loop,  `nums` array each element is check whether `num` is truthy if truthy then increment `count` value by 1. For first iteration , `num` =0, which is not truthy , so this time `count` is not increment. Next iteration , `num` = 1 which is truth ,so this time `count` value is increment by it's previous `+` 1 which is `0+1=1`. Similarly when `num` is `2`,`3` , `count`  variable is incremented by `1` for each of them.After complete the loop, the final value of `count` is `3`.
 
 </p>
 </details>
