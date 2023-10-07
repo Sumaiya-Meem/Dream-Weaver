@@ -5,6 +5,8 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Contact from "../Pages/Contact/Contact";
 import Gallery from "../Pages/Gallery/Gallery";
 import ServiceDetails from "../components/Service/ServiceDetails";
+import Register from "../Pages/Register/Register";
+import Login from "../Pages/Login/Login";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
             path: "/contact",
             element: <Contact></Contact>,
         },
+        {
+          path: "/login",
+          element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+    },
       ],
     },
   ]);
