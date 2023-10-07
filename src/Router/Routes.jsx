@@ -13,6 +13,8 @@ const router = createBrowserRouter([
         {
           path: "/",
           element: <Home></Home>,
+          loader: ()=> fetch('servicesData.json')
+
         },
         {
             path: "/gallery",

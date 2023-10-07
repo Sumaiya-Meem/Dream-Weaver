@@ -1,0 +1,110 @@
+ [
+      {
+        "id": 1,
+        "service_name": "Weddings",
+        "image": "https://i.ibb.co/GPCVvVD/w.webp",
+        "price": "$10,000",
+        "description": "Make your wedding day truly magical with our comprehensive wedding planning service. Our team of expert planners will work closely with you to create the wedding of your dreams. From selecting the perfect venue to coordinating every detail, including photography, makeup, catering, cake, decor, entertainment, flowers, and transportation, we've got it all covered. You can relax and enjoy your special day while we ensure that every moment is perfect.",
+        "venue": "Elegant Garden Estate",
+        "package": [
+          "Professional Photography and Videography",
+          "Bridal Makeup and Hairstyling",
+          "Gourmet Catering",
+          "Custom Wedding Cake",
+          "Luxurious Decor Arrangements",
+          "Live Music and DJ",
+          "Beautiful Floral Arrangements",
+          "Limo Service"
+        ]
+      },
+      {
+        "id": 2,
+        "service_name": "Birthday Parties",
+        "image": "https://i.ibb.co/q7sF2Gd/b.webp",
+        "price": "$1,500",
+        "description": "Let us take care of the details while you enjoy your birthday celebration. Our birthday party planning services are designed to make your special day hasslefree and fun for all ages. We provide professional photography, delicious party food, a custom birthday cake, themed decorations, games and activities, goodie bags, balloon arrangements, and even a magician and clown for entertainment. It's your day to shine!",
+        "venue": "FunZone Arcade & Party Hall",
+        "package": [
+          "Birthday Photo Session",
+          "Delicious Party Food",
+          "Custom Birthday Cake",
+          "Themed Decorations",
+          "Games and Activities",
+          "Party Favors",
+          "Balloon Arrangements",
+          "Magician and Clown"
+        ]
+      },
+      {
+        "id": 3,
+        "service_name": "Anniversaries",
+        "image": "https://i.ibb.co/kxqLSPs/a.webp",
+        "price": "$2,500",
+        "description": "Celebrate your love and commitment with a memorable anniversary party. We'll create an evening to remember with romantic ambiance, a gourmet dinner menu, an anniversary cake, candlelit decor, live music and dancing, elegant floral arrangements, fine wine selection, and personalized anniversary gifts. It's a special occasion to cherish your journey together.",
+        "venue": "Romantic Rooftop Terrace",
+        "package": [
+          "Anniversary Photo Shoot",
+          "Romantic Dinner Menu",
+          "Anniversary Cake",
+          "Candlelit Ambiance",
+          "Live Music and Dancing",
+          "Elegant Flower Arrangements",
+          "Fine Wine Selection",
+          "Personalized Anniversary Gifts"
+        ]
+      },
+      {
+        "id": 4,
+        "service_name": "Engagement Parties",
+        "image": "https://i.ibb.co/7kY21L4/ring4.webp",
+        "price": "$3,000",
+        "description": "Announce your engagement in style! Our engagement party planning services include everything you need to celebrate this special moment. We offer an engagement photo session, an engagement dinner menu, a custom engagement cake, engagementthemed decorations, live music and dance floor, a romantic proposal arrangement, engagement floral arrangements, and a champagne toast. Let the celebration begin!",
+        "venue": "Charming Garden Venue",
+        "package": [
+          "Engagement Photo Session",
+          "Engagement Dinner Menu",
+          "Engagement Cake",
+          "EngagementThemed Decorations",
+          "Live Music and Dance Floor",
+          "Romantic Proposal Setup",
+          "Engagement Floral Arrangements",
+          "Champagne Toast"
+        ]
+      },
+      {
+        "id": 5,
+        "service_name": "Retirement Parties",
+        "image": "https://i.ibb.co/Bwpq0Mp/retire.webp",
+        "price": "$2,000",
+        "description": "Celebrate the end of your career and the beginning of a new chapter with a memorable retirement party. Our retirement party planning services cover every aspect of the event. We provide retirementthemed decorations, a retirement party menu, a retirement cake, speeches and tributes, retirement gifts, and background music. It's a time to reflect and enjoy the next adventure!",
+        "venue": "Riverside Banquet Hall",
+        "package": [
+          "Retirement Photo Session",
+          "Retirement Party Menu",
+          "Retirement Cake",
+          "RetirementThemed Decorations",
+          "Speeches and Tributes",
+          "Retirement Gifts",
+          "Background Music"
+        ]
+      },
+      {
+        "id": 6,
+        "service_name": "Baby Showers",
+        "image": "https://i.ibb.co/KGBCc5R/baby.webp",
+        "price": "$1,200",
+        "description": "Celebrate the upcoming arrival of your little one with a delightful baby shower. Our baby shower planning services handle all the details, including a baby bump photoshoot, a baby shower menu, a baby shower cake, adorable babythemed decorations, games, party favors, a diaper cake centerpiece, and a gift opening session. It's a joyous occasion to welcome your baby!",
+        "venue": "Cozy Tea Room",
+        "package": [
+          "Baby Bump Photoshoot",
+          "Baby Shower Menu",
+          "Baby Shower Cake",
+          "Adorable BabyThemed Decorations",
+          "Baby Shower Games",
+          "Party Favors",
+          "Diaper Cake Centerpiece",
+          "Gift Opening Session"
+        ]
+      }
+    ]
+  
