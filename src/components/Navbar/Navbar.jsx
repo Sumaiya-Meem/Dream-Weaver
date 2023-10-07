@@ -1,5 +1,17 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthProvider";
+import userImage from "../../assets/userimg.png"
 const Navbar = () => {
+
+    const { user ,userLogOut} = useContext(AuthContext);
+    console.log(user);
+
+    const handleLogOut = ()=>{
+        userLogOut()
+        .then()
+        .catch()
+    }
 
     const navLinks = <>
         < NavLink to="/" className={({ isActive, isPending }) =>
@@ -39,9 +51,35 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login"><button className="btn  btn-outline btn-info text-base ">Login</button></Link>
-                    <Link to="/register"><button className="btn  btn-outline btn-info text-base ml-3">Register</button></Link>
-                    
+                    {
+                        user ?
+                            <>
+                            <div className="flex flex-col items-center">
+                                {
+                                    user.photoURL ? <img
+                                    src={user.photoURL}
+                                    alt=""
+                                    className="w-10 h-10 rounded-full mr-2"
+                                    />
+                                    :
+                                    <img
+                                    src={userImage }
+                                    alt=""
+                                    className="w-10 h-10 rounded-full mr-2"
+
+                                />
+                                }
+                                
+                                <p className="mr-2">{user.displayName ? user.displayName : user.email }</p>
+                            </div>
+                            <button className="btn  btn-outline btn-info text-base ml-4" onClick={handleLogOut}>LogOut</button>
+                            </>
+                            :
+                            <>
+                                <Link to="/login"><button className="btn  btn-outline btn-info text-base ">Login</button></Link>
+
+                            </>
+                    }
                 </div>
             </div>
         </div>

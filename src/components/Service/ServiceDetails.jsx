@@ -17,7 +17,7 @@ const ServiceDetails = () => {
         const findSelectedCard = serviceCard?.find(service => service.id == id)
         setSelectService(findSelectedCard);
     }, [id, serviceCard])
-    console.log(selectService)
+    // console.log(selectService)
 
     return (
         <div>

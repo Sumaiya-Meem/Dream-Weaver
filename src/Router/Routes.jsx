@@ -7,6 +7,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import ServiceDetails from "../components/Service/ServiceDetails";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
+import PrivateRoute from "./PrivateRoute";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/service/:id",
-          element: <ServiceDetails></ServiceDetails>,
+          element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
 
         },
         {

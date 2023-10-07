@@ -2,46 +2,43 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
 
-  const {createNewUser} =useContext(AuthContext);
-  const [registerError,setRegisterError]=useState('');
-  const [registerSuccess,setRegisterSuccess]=useState('');
+    const { createNewUser } = useContext(AuthContext);
+    const [registerError, setRegisterError] = useState('');
 
-    const  handleRegister =e =>{
+    const handleRegister = e => {
         e.preventDefault();
-        const form=new FormData(e.currentTarget);
-        
-        const name= form.get('name');
-        const image= form.get('photo');
-        const email= form.get('email');
-        const password= form.get('password');
+        const form = new FormData(e.currentTarget);
+
+        const name = form.get('name');
+        const image = form.get('photo');
+        const email = form.get('email');
+        const password = form.get('password');
         // console.log(name,image,email,password)
         setRegisterError('');
-        setRegisterSuccess('');
-     
 
-        if(!/^(?=.*[A-Z])(?=.*[@$!%*?&]).{6,}$/.test(password)){
+
+        if (!/^(?=.*[A-Z])(?=.*[@$!%*?&]).{6,}$/.test(password)) {
             setRegisterError('Password should be at least six characters, one uppercase letter and one special character');
-            return ;
+            return;
         }
 
-        createNewUser(email,password)
-        .then(res => {
-            console.log(res.user)
-            setRegisterSuccess("successfully register")
-            toast.success('Registration Successful', {
-                 position: "top-center",
-              });
-        })
-        .catch(error =>{
-            console.log(error.message);
-        })
+        createNewUser(email, password)
+            .then(res => {
+                console.log(res.user)
+                toast.success('Registration Successful', {
+                    position: "top-center",
+                });
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
 
 
     }
-    
+
     return (
         <div>
             <div className="hero  bg-gradient-to-r from-[#8d318a] to-[#19c7c7]">
@@ -75,19 +72,21 @@ const Register = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
-
+                                <div>
+                                    {
+                                        registerError && <p className="text-red-300">{registerError}</p>
+                                    }
+                                </div>
                             </div>
                             <p>Already have an Account?
                                 <span className="text-blue-500 ml-3"><Link to='/login'>Login</Link></span>
 
                             </p>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Register</button>
+                                <button className="btn bg-gradient-to-r from-[#8d318a] to-[#19c7c7] text-white">Register</button>
                             </div>
                         </form>
-                        {
-                            registerError && <p className="text-red-300">{registerError}</p>
-                        }
+
                     </div>
                 </div>
             </div>
