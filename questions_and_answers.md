@@ -96,7 +96,6 @@ console.log(sayHi());
 #### Answer: B
 in this code, `sayHi` function expects one argument `name`, to be passed when it's called.But in `console.log(sayHi())` , didn't provide any argument to the sayHi function.So JavaScript will assign undefined to the parameter.For this reason `name` parameter inside the `sayHi` function will be undefined &  the function will return the string `"Hi there, undefined"`.
 
-<i>Write your explanation here</i>
 
 </p>
 </details>
@@ -122,7 +121,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: 3
+#### Answer: C
 To use ForEach loop,  `nums` array each element is check whether `num` is truthy if truthy then increment `count` value by 1. For first iteration , `num` =0, which is not truthy , so this time `count` is not increment. Next iteration , `num` = 1 which is truth ,so this time `count` value is increment by it's previous `+` 1 which is `0+1=1`. Similarly when `num` is `2`,`3` , `count`  variable is incremented by `1` for each of them.After complete the loop, the final value of `count` is `3`.
 
 </p>
