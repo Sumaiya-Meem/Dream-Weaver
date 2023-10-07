@@ -18,12 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
- A
- In the code, `greeting` is declared but unassigned on the other hand `greetign` is assigned with an empty object but undecalred. if print `greetign` it show empty object `{}` to the console but there is change that it throw an error because `greetign` is undecalred.
+#### Answer:  A
+
 
 <i>Write your explanation here</i>
-
+In the code, `greeting` is declared but unassigned on the other hand `greetign` is assigned with an empty object but undecalred. if print `greetign` it show empty object `{}` to the console but there is change that it throw an error because `greetign` is undecalred.
 </p>
 </details>
 
