@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
 const Register = () => {
 
     const { createNewUser } = useContext(AuthContext);
     const [registerError, setRegisterError] = useState('');
+  
 
     const handleRegister = e => {
         e.preventDefault();
@@ -28,9 +28,11 @@ const Register = () => {
         createNewUser(email, password)
             .then(res => {
                 console.log(res.user)
-                toast.success('Registration Successful', {
-                    position: "top-center",
-                });
+                Swal.fire(
+                    'Successfully Register',
+                    'success'
+                  )
+                
                 
             })
             .catch(error => {
@@ -92,7 +94,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <ToastContainer />
+    
         </div>
     );
 };
