@@ -50,7 +50,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end flex flex-col gap-2 lg:flex-row">
                     {
                         user ?
                             <>

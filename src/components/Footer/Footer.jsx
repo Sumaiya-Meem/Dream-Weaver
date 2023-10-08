@@ -13,7 +13,7 @@ const Footer = () => {
     </>
     return (
         <div>
-            <footer className="flex items-center justify-around footer p-10 bg-[#424242] ">
+            <footer className="flex flex-col md:flex-row items-center justify-around footer p-10 bg-[#424242] ">
                 <aside>
                 <a className="capitalize text-2xl font-semibold text-white"><span className="text-[#FF444A] text-3xl">D</span>ream<span className="text-[#FF444A] text-3xl">W</span>eaver</a>
                 </aside>

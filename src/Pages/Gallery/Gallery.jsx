@@ -16,11 +16,11 @@ const Gallery = () => {
                 <div>
                     <img src={gallery2} alt="" className="rounded-md w-full" />
                 </div>
-                <div className="row-span-2">
+                <div className="row-span-1 lg:row-span-2">
                     <img src={gallery3} alt=""  className="rounded-md w-full h-full" />
                 </div>
-                <div className="col-span-2">
-                    <img src={gallery4} alt="" className="rounded-md w-full object-cover" />
+                <div className="col-span-1 lg:col-span-2">
+                    <img src={gallery4} alt="" className="rounded-md w-full" />
                 </div>
                 <div>
                     <img src={gallery5} alt="" className="rounded-md" />
