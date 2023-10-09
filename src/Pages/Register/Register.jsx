@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import Swal from 'sweetalert2'
+import { updateProfile } from "firebase/auth";
 const Register = () => {
 
     const { createNewUser,userLogOut } = useContext(AuthContext);
@@ -16,7 +17,7 @@ const Register = () => {
         const image = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name,image,email,password)
+        // console.log(name,image,email,password)
         setRegisterError('');
 
 
@@ -24,26 +25,49 @@ const Register = () => {
             setRegisterError('Password should be at least six characters, one uppercase letter and one special character');
             return;
         }
+        
 
         createNewUser(email, password)
             .then(res => {
                 console.log(res.user)
-                Swal.fire(
-                    'Successfully Register',
-                    'success'
-                  )
-                  userLogOut()
-                    .then(() => {
+                    updateProfile(res.user, {
+                    displayName: name,
+                    photoURL: image, 
+                   })
+                .then(() => {
+                    Swal.fire(
+                        'Successfully Register',
+                        'success'
+                    );
+    
+                    userLogOut()
+                        .then(() => {
+                            navigate('/login');
+                        })
+                        .catch(error => {
+                            console.log(error.message);
+                        });
+                })
+                .catch(error => {
+                    console.log(error.message);
+                });
+            })
+            //     Swal.fire(
+            //         'Successfully Register',
+            //         'success'
+            //       )
+            //       userLogOut()
+            //         .then(() => {
                        
-                        navigate('/login');
-                    })
-                    .catch(error => {
-                        console.log(error.message);
-                    });
-            })
-            .catch(error => {
-                console.log(error.message);
-            })
+            //             navigate('/login');
+            //         })
+            //         .catch(error => {
+            //             console.log(error.message);
+            //         });
+            // })
+            // .catch(error => {
+            //     console.log(error.message);
+            // })
           
             
     }
@@ -68,7 +92,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Photo</span>
                                 </label>
-                                <input type="file" name="photo" placeholder="Photo" className="input input-bordered" required />
+                                <input type="text" name="photo" placeholder="Photo" className="input input-bordered" required />
                             </div>
 
                             <div className="form-control">
