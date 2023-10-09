@@ -5,8 +5,7 @@ const ReviewCard = ({reviews}) => {
     const {image,review,client_name}=reviews;
     
     return (
-        <div className="bg-red-100 rounded-lg p-2 " data-aos="fade-up"
-        data-aos-duration="1000">
+        <div className="bg-red-100 rounded-lg p-2 " data-aos="fade-up" data-aos-duration="1000">
             <div className='flex gap-3'>
                 <img src={image} alt=""  className="w-16 h-16 rounded-full"/>
                 <div className='flex gap-5'>

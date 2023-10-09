@@ -44,7 +44,7 @@ sum(1, "2");
 
 #### Answer: C
 
-In this code, the output of the `sum(1, "2")` function is `"12"` because The first argument is a number `(1)`, while the second argument is a string `("2")`.For this reason JavaScript will convert the number 1 to a string and then concatenate it with the string "2", resulting in the string `"12"`.
+If we console log this code , the output of the `sum(1, "2")` function is `"12"` because the first argument is a number `(1)`, while the second argument is a string `("2")`.For this reason JavaScript will convert the number 1 to a string and then concatenate it with the string "2", resulting in the string `"12"`. But in this code only call the function `sum(1, "2")` , the function is not console log .So in code editor this code does not show any result.
 
 </p>
 </details>

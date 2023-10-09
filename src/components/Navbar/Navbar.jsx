@@ -32,8 +32,8 @@ const Navbar = () => {
 
 
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className="mx-4">
+            <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,7 +50,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end flex flex-col gap-2 lg:flex-row">
+                <div className="navbar-end flex flex-col lg:flex-row gap-2 ">
                     {
                         user ?
                             <>

@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import { Link} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import Swal from 'sweetalert2'
 const Register = () => {
 
-    const { createNewUser } = useContext(AuthContext);
+    const { createNewUser,userLogOut } = useContext(AuthContext);
     const [registerError, setRegisterError] = useState('');
-  
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -16,7 +16,7 @@ const Register = () => {
         const image = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(name,image,email,password)
+        console.log(name,image,email,password)
         setRegisterError('');
 
 
@@ -32,8 +32,14 @@ const Register = () => {
                     'Successfully Register',
                     'success'
                   )
-                
-                
+                  userLogOut()
+                    .then(() => {
+                       
+                        navigate('/login');
+                    })
+                    .catch(error => {
+                        console.log(error.message);
+                    });
             })
             .catch(error => {
                 console.log(error.message);

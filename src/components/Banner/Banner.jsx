@@ -1,7 +1,7 @@
 import bannerImg from "../../assets/Banner.webp"
 const Banner = () => {
   return (
-    <div>
+    <div className="mx-4">
       <div className="hero min-h-[500px]" style={{ backgroundImage: `url(${bannerImg})` }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">

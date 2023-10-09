@@ -12,7 +12,7 @@ const Footer = () => {
 
     </>
     return (
-        <div>
+        <div className=" mx-4"> 
             <footer className="flex flex-col md:flex-row items-center justify-around footer p-10 bg-[#424242] ">
                 <aside>
                 <a className="capitalize text-2xl font-semibold text-white"><span className="text-[#FF444A] text-3xl">D</span>ream<span className="text-[#FF444A] text-3xl">W</span>eaver</a>
